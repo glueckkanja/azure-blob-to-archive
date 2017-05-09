@@ -1,0 +1,8 @@
+ build:release:
+   stage: build
+   artifacts:
+     paths:
+       - AzureBlobToArchive/bin/Release/net46/publish
+   script:
+     - dotnet restore
+     - dotnet publish -c Release
