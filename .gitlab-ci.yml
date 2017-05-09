@@ -2,7 +2,7 @@ build:release:
   stage: build
   artifacts:
     paths:
-      - dist
+      - AzureBlobToArchive/dist
   script:
     - dotnet restore
     - dotnet publish -c Release -o dist
